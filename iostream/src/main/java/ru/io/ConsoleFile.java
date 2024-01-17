@@ -6,8 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ConsoleReader {
-
+public class ConsoleFile {
     public static void main(String[] args) {
 
         // Вся история введенных данные с консоли сохраняется в файл

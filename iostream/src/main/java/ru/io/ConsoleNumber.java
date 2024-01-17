@@ -2,7 +2,7 @@ package ru.io;
 
 import java.util.Scanner;
 
-public class Console {
+public class ConsoleNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число:");
