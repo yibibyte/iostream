@@ -17,7 +17,7 @@ public class ConsoleFile {
                 String line;
                 // Условие прервывание является написание слово exit в Консоли
                 while (!(line = reader.readLine()).equals("exit")) {
-                    writer.write(line);
+                    writer.write(line + "\n");
                 }
             }
         }
