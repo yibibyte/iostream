@@ -7,7 +7,7 @@ import java.io.*;
  * с использованием ObjectOutputStream и десериализацию объекта
  * из файла с использованием ObjectInputStream.
  */
-public class ObjectInputStreamExample {
+public class ObjectInputStreamOfPerson {
     public static void main(String[] args) {
         // Запись объекта в файл
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("person.ser"))) {

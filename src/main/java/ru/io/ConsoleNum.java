@@ -2,9 +2,11 @@ package ru.io;
 
 import java.util.Scanner;
 
-public class ConsoleNumber {
+public class ConsoleNum {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Введите число:");
 
         if (scanner.hasNextInt()) {

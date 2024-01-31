@@ -11,7 +11,7 @@ import java.io.PipedOutputStream;
  * читаются из PipedInputStream потоком чтения (readerThread).
  * Оба потока работают параллельно.
  */
-public class PipedExample {
+public class PipedOfStream {
     public static void main(String[] args) {
         try {
             // Создаем потоки

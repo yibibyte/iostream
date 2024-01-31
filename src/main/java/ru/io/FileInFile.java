@@ -1,17 +1,20 @@
 package ru.io;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class FileToFile {
+public class FileInFile {
     public static void main(String[] args) throws IOException {
+        File file = new File("");
 
         //Создание потока, который будет осуществлять чтение байтов из нашего файла
-        FileInputStream inputStream = new FileInputStream("data.txt");
+        try (FileInputStream inputStream = new FileInputStream("data.txt");
+        FileOutputStream outputStream = new FileOutputStream("result.txt")) {
 
         //Создание потока, который будет записывать байтов из нашего файла
-        FileOutputStream outputStream = new FileOutputStream("result.txt");
+
 
         byte[] buffer = new byte[1000];
 
@@ -27,6 +30,6 @@ public class FileToFile {
         //Обазательно закрываем потоки
         inputStream.close();
         outputStream.close();
-
+        }
     }
 }

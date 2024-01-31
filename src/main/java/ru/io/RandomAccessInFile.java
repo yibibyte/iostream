@@ -8,7 +8,7 @@ import java.io.RandomAccessFile;
  *  Он также позволяет устанавливать указатель файла
  *  в конкретное место для произвольного доступа.
  */
-public class RandomAccessFileExample {
+public class RandomAccessInFile {
     public static void main(String[] args) {
         // Запись в файл
         try (RandomAccessFile randomAccessFile = new RandomAccessFile("randomFile.txt", "rw")) {

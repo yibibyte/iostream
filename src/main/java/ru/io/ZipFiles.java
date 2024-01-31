@@ -7,7 +7,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
-public class ZipExample {
+public class ZipFiles {
     public static void main(String[] args) {
         // Создаем файл zip
         try (ZipOutputStream zipOutputStream = new ZipOutputStream(new FileOutputStream("archive.zip"))) {

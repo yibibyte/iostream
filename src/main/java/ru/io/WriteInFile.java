@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class FileExample {
+public class WriteInFile {
     public static void main(String[] args) {
         try {
             // Запись в файл

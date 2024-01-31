@@ -7,7 +7,7 @@ import java.io.*;
  * в файл и DataInputStream для их чтения. В данном случае, записываются
  * целое число, дробное число и строка
  */
-public class DataInputStreamExample {
+public class DataInputStreamOFFile {
     public static void main(String[] args) {
         // Запись данных в файл
         try (DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream("dataFile.dat"))) {
