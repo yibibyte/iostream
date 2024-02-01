@@ -8,10 +8,11 @@ import java.io.IOException;
 public class FileInFile {
     public static void main(String[] args) throws IOException {
         File file = new File("");
+        String fileString = new String("data.txt");
 
         //Создание потока, который будет осуществлять чтение байтов из нашего файла
-        try (FileInputStream inputStream = new FileInputStream("data.txt");
-        FileOutputStream outputStream = new FileOutputStream("result.txt")) {
+        FileInputStream inputStream = new FileInputStream(fileString);
+        FileOutputStream outputStream = new FileOutputStream("result.txt");
 
         //Создание потока, который будет записывать байтов из нашего файла
 
@@ -30,6 +31,6 @@ public class FileInFile {
         //Обазательно закрываем потоки
         inputStream.close();
         outputStream.close();
-        }
+
     }
 }
