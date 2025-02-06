@@ -1,4 +1,4 @@
-package ru.io;
+package ru.io.files;
 
 import java.io.File;
 import java.io.FileInputStream;

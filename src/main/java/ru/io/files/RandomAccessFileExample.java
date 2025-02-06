@@ -1,4 +1,4 @@
-package ru.io;
+package ru.io.files;
 
 import java.io.RandomAccessFile;
 import java.io.IOException;
@@ -25,6 +25,13 @@ public class RandomAccessFileExample {
             System.out.println("Строка: " + text);
             System.out.println("Целое число: " + number);
             System.out.println("Число с плавающей точкой: " + pi);
+
+            raf.seek(10); // Перемещаемся на позицию 10
+            raf.writeBytes("Новое значение"); // Записываем новые данные
+
+            long fileSize = raf.length();
+            System.out.println("Размер файла: " + fileSize + " байт");
+
 
         } catch (IOException e) {
             e.printStackTrace();

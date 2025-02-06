@@ -1,4 +1,4 @@
-package ru.io;
+package ru.io.files;
 
 import java.io.*;
 import java.nio.file.*;
